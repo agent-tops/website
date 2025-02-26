@@ -2,19 +2,19 @@ import { MarkdownComponent, injectContent } from "@analogjs/content";
 import { AsyncPipe, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
 
-import { BlogPost } from 'src/app/models/post';
+import { Tool } from 'src/app/models/tool';
 
 @Component({
     standalone: true,
     imports: [MarkdownComponent, NgIf, AsyncPipe],
     template: `
-    <div *ngIf="post$ | async as post">
-            <h2>{{ post.attributes.title }}</h2>
+    <div *ngIf="tool$ | async as tool">
+            <h2>{{ tool.attributes.title }}</h2>
 
-            <analog-markdown [content]="post.content" />
+            <analog-markdown [content]="tool.content" />
     </div>
     `
 })
-export default class BlogPostPage {
-    post$ = injectContent<BlogPost>();
+export default class ToolPage {
+    tool$ = injectContent<Tool>();
 }

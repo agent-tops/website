@@ -1,5 +1,5 @@
 ---
-title: Coming Soon
+title: Blog Coming Soon
 slug: coming-soon
 ---
 
