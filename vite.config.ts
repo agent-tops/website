@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     analog({
       prerender: {
-        routes: async () => ['/', '/blog'],
+        routes: async () => ['/', '/learn', '/build', '/tool', '/about', '/contact'],
         sitemap: {
           host: 'https://agenttops.eu/',
         },
