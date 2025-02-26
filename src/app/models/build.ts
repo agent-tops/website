@@ -1,5 +1,6 @@
 export interface Build {
     title: string;
     slug: string;
-    draft: boolean;
+    published: boolean;
+    publishedDate: string;
 }
