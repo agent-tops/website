@@ -15,6 +15,9 @@ export default defineConfig(({ mode }) => ({
     analog({
       prerender: {
         routes: async () => ['/',
+          '/build',
+          '/learn',
+          '/tool',
           {
             contentDir: 'src/content/build',
             transform: (file: PrerenderContentFile) => {
