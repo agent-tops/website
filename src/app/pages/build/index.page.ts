@@ -9,18 +9,6 @@ import { Build } from 'src/app/models/build';
     standalone: true,
     imports: [NgFor, RouterLink, AsyncPipe],
     template: `
-        <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <h2>BUILD - Coming soon</h2>
-
     <ul>
         <li *ngFor="let build of builds">
             <a [routerLink]="['/build', build.slug]">{{ build.attributes.title }}</a>

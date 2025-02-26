@@ -5,14 +5,13 @@ import { RouterOutlet } from "@angular/router";
     standalone: true,
     imports: [RouterOutlet],
     template: `
-            <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h1>Agent Tops</h1>
-
-        <router-outlet />
+        <div class="text-gray-100 text-[15px] mt-132 mb-32 max-w-7xl mx-auto">
+        <div class="max-w-5xl mx-auto text-center relative px-4 sm:px-10 mt-16">
+            <h1 class="lg:text-7xl md:text-6xl text-4xl font-semibold mb-6">Learn</h1>
+            <h2 class="lg:text-3xl md:text-3xl text-2xl font-semibold mb-6 text-gray-400">Educational content for foundational knowledge.</h2>
+                <router-outlet />
+        </div>
+    </div>
     `
 })
 export default class LearnPage {}
