@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
             contentDir: 'src/content/build',
             transform: (file: PrerenderContentFile) => {
               // do not include files marked as draft in frontmatter
-              if (file.attributes.draft) {
+              if (file.attributes.published) {
                 return false;
               }
               // use the slug from frontmatter if defined, otherwise use the files basename
@@ -33,7 +33,7 @@ export default defineConfig(({ mode }) => ({
             contentDir: 'src/content/learn',
             transform: (file: PrerenderContentFile) => {
               // do not include files marked as draft in frontmatter
-              if (file.attributes.draft) {
+              if (file.attributes.published) {
                 return false;
               }
               // use the slug from frontmatter if defined, otherwise use the files basename
@@ -44,7 +44,7 @@ export default defineConfig(({ mode }) => ({
             contentDir: 'src/content/tool',
             transform: (file: PrerenderContentFile) => {
               // do not include files marked as draft in frontmatter
-              if (file.attributes.draft) {
+              if (file.attributes.published) {
                 return false;
               }
               // use the slug from frontmatter if defined, otherwise use the files basename

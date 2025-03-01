@@ -5,4 +5,4 @@ published: true
 publishedDate: 2025-08-08
 ---
 
-Coming Soon
+Coming Soon most interesting article

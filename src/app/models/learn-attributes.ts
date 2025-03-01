@@ -1,4 +1,4 @@
-export interface Tool {
+export interface LearnAttributes {
     title: string;
     slug: string;
     published: boolean;

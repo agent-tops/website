@@ -2,7 +2,6 @@ import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
 @Component({
-    standalone: true,
     imports: [RouterOutlet],
     template: `
         <div class="text-gray-100 text-[15px] mt-132 mb-32 max-w-7xl mx-auto">
@@ -14,4 +13,4 @@ import { RouterOutlet } from "@angular/router";
     </div>
     `
 })
-export default class LearnPage {}
+export default class LearnComponent {}
