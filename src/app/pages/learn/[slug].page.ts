@@ -1,8 +1,8 @@
-import { MarkdownComponent, injectContent } from "@analogjs/content";
+import { MarkdownComponent, injectContent, injectContentFiles } from "@analogjs/content";
 import { AsyncPipe, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
 
-import { Learn } from 'src/app/models/learn';
+import { LearnAttributes } from 'src/app/models/learn-attributes';
 
 @Component({
     standalone: true,
@@ -15,6 +15,9 @@ import { Learn } from 'src/app/models/learn';
     </div>
     `
 })
-export default class BlogPostPage {
-    learn$ = injectContent<Learn>();
+export default class LearnDetailsPageComponent {
+  readonly learn$ = injectContent<LearnAttributes>({
+    param: "slug",
+    subdirectory: "learn"
+  });
 }

@@ -1,8 +1,9 @@
-import { MarkdownComponent, injectContent } from "@analogjs/content";
+import { MarkdownComponent, injectContent, injectContentFiles } from "@analogjs/content";
+import { injectActivatedRoute } from "@analogjs/router";
 import { AsyncPipe, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
 
-import { Tool } from 'src/app/models/tool';
+import { ToolAttributes } from 'src/app/models/tool-attributes';
 
 @Component({
     standalone: true,
@@ -15,6 +16,9 @@ import { Tool } from 'src/app/models/tool';
     </div>
     `
 })
-export default class ToolPage {
-    tool$ = injectContent<Tool>();
+export default class ToolDetailsPageComponent {
+  readonly tool$ = injectContent<ToolAttributes>({
+    param: "slug",
+    subdirectory: "tool"
+  });
 }
