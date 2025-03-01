@@ -1,8 +1,8 @@
-import { MarkdownComponent, injectContent, injectContentFiles } from "@analogjs/content";
+import { MarkdownComponent, injectContent } from "@analogjs/content";
 import { AsyncPipe, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
 
-import { BuildAttributes } from 'src/app/models/build-attributes';
+import { BuildAttributes } from '../..//models/build-attributes';
 
 @Component({
   imports: [MarkdownComponent, AsyncPipe, NgIf],

@@ -1,8 +1,8 @@
-import { MarkdownComponent, injectContent, injectContentFiles } from "@analogjs/content";
+import { MarkdownComponent, injectContent } from "@analogjs/content";
 import { AsyncPipe, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
 
-import { LearnAttributes } from 'src/app/models/learn-attributes';
+import { LearnAttributes } from '../../models/learn-attributes';
 
 @Component({
     standalone: true,

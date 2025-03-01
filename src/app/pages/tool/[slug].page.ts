@@ -1,9 +1,8 @@
-import { MarkdownComponent, injectContent, injectContentFiles } from "@analogjs/content";
-import { injectActivatedRoute } from "@analogjs/router";
+import { MarkdownComponent, injectContent } from "@analogjs/content";
 import { AsyncPipe, NgIf } from "@angular/common";
 import { Component } from "@angular/core";
 
-import { ToolAttributes } from 'src/app/models/tool-attributes';
+import { ToolAttributes } from '../../models/tool-attributes';
 
 @Component({
     standalone: true,
