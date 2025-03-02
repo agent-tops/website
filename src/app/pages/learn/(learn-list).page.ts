@@ -1,26 +1,46 @@
 import { Component } from '@angular/core';
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe, DatePipe, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 import { injectContentFiles } from '@analogjs/content';
-
 import { LearnAttributes } from 'src/app/models';
+import ArticleTileComponent from '../../ui/article-tile.component';
 
 @Component({
-    standalone: true,
-    imports: [NgFor, RouterLink, AsyncPipe],
-    template: `
-    <ul>
-        <li *ngFor="let learn of learns">
-            <a [routerLink]="['/learn', learn.slug]">{{ learn.attributes.title }}</a>
-        </li>
-    </ul>
-    `
+  imports: [NgFor, RouterLink, AsyncPipe, DatePipe, ArticleTileComponent],
+  template: `
+    @if (learnArticles.length > 0) {
+    <div class="grid gap-8 lg:grid-cols-3">
+      @for (learnArticle of learnArticles; track learnArticle) {
+      <article-tile
+        category="Tools & Resources"
+        [publishedDate]="learnArticle.attributes.publishedDate"
+        [title]="learnArticle.attributes.title"
+        basePath="/learn"
+        [slug]="learnArticle.attributes.slug"
+        [description]="learnArticle.attributes.description"
+      />
+      }
+    </div>
+    } @else {
+    <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+      <h2
+        class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        Coming soon ...
+      </h2>
+    </div>
+    }
+  `,
 })
-export default class BuildListComponent {
-    readonly learns = injectContentFiles<LearnAttributes>((contentFile) =>
-        contentFile.filename.includes('/src/content/learn'))
-        .filter(item => item.attributes.published)
-        .sort((item1, item2) => Date.parse(item2.attributes.publishedDate) - Date.parse(item1.attributes.publishedDate));
+export default class LearnArticleListComponent {
+  readonly learnArticles = injectContentFiles<LearnAttributes>((contentFile) =>
+    contentFile.filename.includes('/src/content/learn')
+  )
+    .filter((learnArticle) => learnArticle.attributes.published)
+    .sort(
+      (learnArticle1, learnArticle2) =>
+        Date.parse(learnArticle2.attributes.publishedDate) -
+        Date.parse(learnArticle1.attributes.publishedDate)
+    );
 }
-

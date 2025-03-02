@@ -1,6 +1,6 @@
-import { MarkdownComponent, injectContent } from "@analogjs/content";
-import { AsyncPipe, NgIf } from "@angular/common";
-import { Component } from "@angular/core";
+import { MarkdownComponent, injectContent } from '@analogjs/content';
+import { AsyncPipe, NgIf } from '@angular/common';
+import { Component } from '@angular/core';
 
 import { BuildAttributes } from '../..//models/build-attributes';
 
@@ -8,15 +8,14 @@ import { BuildAttributes } from '../..//models/build-attributes';
   imports: [MarkdownComponent, AsyncPipe, NgIf],
   template: `
     <div *ngIf="build$ | async as build">
-            <h2>{{ build.attributes.title }}</h2>
-
-            <analog-markdown [content]="build.content" />
+      <h2>{{ build.attributes.title }}</h2>
+      <analog-markdown [content]="build.content" />
     </div>
   `,
 })
-export default class BuildDetailsPageComponent {
+export default class BuildArticlePageComponent {
   readonly build$ = injectContent<BuildAttributes>({
-    param: "slug",
-    subdirectory: "build"
+    param: 'slug',
+    subdirectory: 'build',
   });
 }

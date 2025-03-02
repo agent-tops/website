@@ -3,4 +3,5 @@ export interface LearnAttributes {
     slug: string;
     published: boolean;
     publishedDate: string;
+    description: string;
 }

@@ -1,7 +1,7 @@
 ---
 title: What is an AI Agent?
 slug: what-is-an-ai-agent
-published: true
+published: false
 publishedDate: 2025-08-08
 ---
 

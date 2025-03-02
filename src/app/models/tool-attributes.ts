@@ -3,4 +3,6 @@ export interface ToolAttributes {
     slug: string;
     published: boolean;
     publishedDate: string;
+    description: string;
+    image: string;
 }

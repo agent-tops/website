@@ -1,10 +1,10 @@
 ---
 title: Neo4j GenAI stack
-slug: neo4j-genai-stack
+slug: neo4j-genai-stack-6
 published: false
 publishedDate: 2025-08-02
 description: The GenAI Stack is a pre-built development environment created by Neo4j in collaboration with Docker, LangChain, and Ollama. This stack is designed for creating GenAI applications, particularly focusing on improving the accuracy, relevance, and provenance of generated responses in LLMs (Large Language Models) through Retrieval Augmented Generation (RAG).
-image: https://cdn.prod.website-files.com/61845f7929f5aa517ebab941/6440f9477c2a321f0dd6ab61_How%20Artificial%20Intelligence%20(AI)%20Is%20Used%20In%20Biometrics.jpg
+image: https://ideas.darden.virginia.edu/sites/default/files/styles/full_width_1024px_5_3_/public/2024-09/AI%20ART%20ITA.jpg?itok=CIaF2iIX
 ---
 
 ## Neo4j GenAI stack most interesting article

@@ -1,16 +1,24 @@
-import { Component } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
-    imports: [RouterOutlet],
-    template: `
-         <div class="text-gray-100 text-[15px] mt-132 mb-32 max-w-7xl mx-auto">
-        <div class="max-w-5xl mx-auto text-center relative px-4 sm:px-10 mt-16">
-            <h1 class="lg:text-7xl md:text-6xl text-4xl font-semibold mb-6">Tools & Resources</h1>
-            <h2 class="lg:text-3xl md:text-3xl text-2xl font-semibold mb-6 text-gray-400">Curated assets to streamline workflows.</h2>
-                <router-outlet />
+  imports: [RouterOutlet],
+  template: `
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+          <h2
+            class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
+            Tools & Resources
+          </h2>
+          <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            Curated assets to streamline workflows.
+          </p>
         </div>
-    </div>
-    `
+        <router-outlet />
+      </div>
+    </section>
+  `,
 })
 export default class ToolComponent {}
