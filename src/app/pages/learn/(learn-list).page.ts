@@ -13,12 +13,13 @@ import ArticleTileComponent from '../../ui/article-tile.component';
     <div class="grid gap-8 lg:grid-cols-3">
       @for (learnArticle of learnArticles; track learnArticle) {
       <article-tile
-        category="Tools & Resources"
+        category="Learn"
         [publishedDate]="learnArticle.attributes.publishedDate"
         [title]="learnArticle.attributes.title"
         basePath="/learn"
         [slug]="learnArticle.attributes.slug"
         [description]="learnArticle.attributes.description"
+        [image]="learnArticle.attributes.image"
       />
       }
     </div>

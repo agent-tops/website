@@ -4,4 +4,5 @@ export interface LearnAttributes {
     published: boolean;
     publishedDate: string;
     description: string;
+    image: string;
 }
