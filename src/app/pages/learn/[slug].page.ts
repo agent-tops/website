@@ -8,7 +8,7 @@ import { LearnAttributes } from '../../models/learn-attributes';
   imports: [MarkdownComponent, NgIf, AsyncPipe],
   template: `
     <div *ngIf="learn$ | async as learn">
-      <img class="rounded-lg mx-auto h-128 mb-12" src="/docs/images/examples/image-1@2x.jpg" [src]="learn.attributes.image" alt="image description">
+      <img class="rounded-lg mx-auto h-128 mb-12" [src]="learn.attributes.image" alt="image description">
       <h2 class="md:text-3xl text-2xl font-semibold md:!leading-[50px] mb-6">{{ learn.attributes.title }}</h2>
       <analog-markdown class="prose dark:prose-invert text-left" [content]="learn.content" />
     </div>
