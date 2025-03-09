@@ -8,13 +8,13 @@ import { RouterLink } from '@angular/router';
   template: `
     <div class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 h-full dark:border-gray-700">
     <a [routerLink]="[basePath(), slug()]">
-        <img class="rounded-t-lg w-full h-48 object-cover" [src]="image()" alt="" onerror="this.src='logo.svg'" />
+        <img class="rounded-t-lg w-full h-48 object-contain" [src]="image()" alt="" onerror="this.src='/logo/logo.svg'" />
     </a>
     <div class="p-5">
         <a [routerLink]="[basePath(), slug()]">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ title() }}</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 h-full dark:text-gray-400">{{ description() }}</p>
+        <p class="mb-3 font-normal text-gray-700 h-full dark:text-gray-400 text-justify">{{ description() }}</p>
         <a [routerLink]="[basePath(), slug()]" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

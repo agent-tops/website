@@ -4,14 +4,23 @@ import { injectContentFiles } from '@analogjs/content';
 import { ToolAttributes } from 'src/app/models';
 import ArticleTileComponent from '../../ui/article-tile.component';
 
+enum ToolType { 
+  DBS = "Databases & Storage",
+  LCE = "Low-Code environment",
+  LLM = "Large Language Models",
+}
+
 @Component({
   imports: [ArticleTileComponent],
   template: `
+    @for (toolType of ToolType; track toolArticle) {
+      
+    }
     @if (toolArticles.length > 0) {
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-8 lg:grid-cols-3">
       @for (toolArticle of toolArticles; track toolArticle) {
       <article-tile
-        category="Tools & Resources"
+        category="Tool"
         [publishedDate]="toolArticle.attributes.publishedDate"
         [title]="toolArticle.attributes.title"
         basePath="/tool"

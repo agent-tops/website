@@ -3,7 +3,8 @@ title: What is the difference between an AI Agent, an AI assistant and an AI bot
 slug: difference-ai-agent-assistant-bot
 published: true
 publishedDate: 2025-03-04
-image: ai-agent.png
+description: It is important to understand what an AI Agent exactly is and what it is not. An AI Agents is autonomous and is allowed to take its own decisions.
+image: /logo/ai-agent.png
 ---
 
 The terms **AI agent, AI assistant, and bot** are often used interchangeably, but they have distinct meanings depending on their functionality and purpose.
