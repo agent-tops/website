@@ -16,11 +16,14 @@ A modern AI agent isn’t just code—it’s a dynamic system with three core co
 
 flowchart TB
     A[Local AI Agent] --> P[Perception]
+    A --> Pl[Planning]
+    A --> M[Memory]
     A --> C[Cognition]
-    A --> Ac[Action]
+    A --> Ac["Action (Tools)"]
     
     style A fill:#4a90e2,color:white,stroke:#333
     style P fill:#50e3c2,stroke:#333
+    style M fill:#50e3c2,stroke:#333
     style C fill:#f5a623,stroke:#333
     style Ac fill:#d0021b,color:white,stroke:#333
 
