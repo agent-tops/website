@@ -1,8 +1,8 @@
 ---
 title: n8n
 slug: n8n
-published: true
+published: false
 publishedDate: 2025-03-05
-description: The Self-hosted AI Starter Kit is an open, docker compose template that bootstraps a fully featured Local AI and Low Code development environment. Curated by n8n, it combines the self-hosted n8n platform with a list of compatible AI products and components to get you started building self-hosted AI workflows.
-image: /logo/n8n-demo.gif
+description: N8n is a low-code process automation tool that allows users to create custom processes and automate tasks across a variety of applications and services. It can be self-hosted with no cost.
+image: /logo/n8n.png
 ---

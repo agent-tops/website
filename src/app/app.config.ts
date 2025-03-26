@@ -16,6 +16,8 @@ export const appConfig: ApplicationConfig = {
       withInterceptors([requestContextInterceptor])
     ),
     provideClientHydration(),
-    provideContent(withMarkdownRenderer())
+    provideContent(withMarkdownRenderer({
+      loadMermaid: () => import('mermaid'),
+    }))
   ],
 };

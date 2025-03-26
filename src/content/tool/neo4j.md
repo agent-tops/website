@@ -1,8 +1,8 @@
 ---
-title: PostgreSQL
-slug: postgresql
+title: Neo4j
+slug: neo4j
 published: false
 publishedDate: 2025-03-05
-description: The Self-hosted AI Starter Kit is an open, docker compose template that bootstraps a fully featured Local AI and Low Code development environment. Curated by n8n, it combines the self-hosted n8n platform with a list of compatible AI products and components to get you started building self-hosted AI workflows.
-image: /logo/elephant.png
+description: A Neo4j graph database stores data as nodes, relationships, and properties instead of in tables or documents. This means you can organize your data in a similar way as when sketching ideas on a whiteboard.
+image: /logo/neo4j.webp
 ---

@@ -1,8 +1,8 @@
 ---
 title: PostgreSQL
 slug: postgresql
-published: true
+published: false
 publishedDate: 2025-03-05
-description: The Self-hosted AI Starter Kit is an open, docker compose template that bootstraps a fully featured Local AI and Low Code development environment. Curated by n8n, it combines the self-hosted n8n platform with a list of compatible AI products and components to get you started building self-hosted AI workflows.
-image: /logo/elephant.png
+description: PostgreSQL is an open source object-relational database management system, released under the PostgreSQL License. It supports both relational (SQL) and non-relational (JSON) and offers advanced SQL functions, including foreign keys, subqueries, and triggers.
+image: /logo/postgresql.png
 ---
